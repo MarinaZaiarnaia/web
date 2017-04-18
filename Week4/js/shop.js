@@ -35,15 +35,15 @@ displayTotalPrice: function(){
 
 displayGreeting: function(){
 var hour;
-var date = new Date()
-var time = date.getHours()
+var date = new Date();
+var time = date.getHours();
 if (time < 12) {
-hour = "Good Morning";
+this.hour = "Good Morning";
   
 } else if (time < 18) {
-hour = "Good Afternoon";
+this.hour = "Good Afternoon";
 } else {
- hour = "Good Evening";
+ this.hour = "Good Evening";
 }
 var timeElement = document.getElementById("time");
 timeElement.textContent = this.hour;
